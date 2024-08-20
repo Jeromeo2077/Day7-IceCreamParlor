@@ -27,21 +27,11 @@ function itemOrder(itemName) {
       customerOrder = item
     }
   }
+
+  customerOrder.quantity += 1
+
+  drawCustomerOrder()
 }
 
 
 
-
-
-//  for (let i = 0; i < shopItems.length; i++) {
-//    let item = shopItems[i]
-//    if (item.name == selectedItemName) {
-//      console.log('found', item);
-//      itemOrdered = item
-//    }
-//  }
-//
-//  itemOrdered.qty += 1
-//  drawOrder()
-//
-//}
