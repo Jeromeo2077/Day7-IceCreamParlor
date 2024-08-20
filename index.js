@@ -1,9 +1,9 @@
 //!SECTION Ice Cream and Toppings Array
 
 const iceCream = [
-  { name: 'Chocolate', price: 4.00, quantity: 0, type: 'scoop' },
-  { name: 'Vanilla', price: 3.00, quantity: 0, type: 'scoop' },
-  { name: 'Strawberry', price: 4.00, quantity: 0, type: 'scoop' },
+  { name: 'Chocolate Ice Cream', price: 4.00, quantity: 0, type: 'scoop' },
+  { name: 'Vanilla Ice Cream', price: 3.00, quantity: 0, type: 'scoop' },
+  { name: 'Strawberry Ice Cream', price: 4.00, quantity: 0, type: 'scoop' },
   { name: 'Sprinkles', price: 2.00, quantity: 0, type: 'topping' },
   { name: 'Chocolate Chips', price: 3.00, quantity: 0, type: 'topping' },
   { name: 'Gummy Worms', price: 2.00, quantity: 0, type: 'topping' },
@@ -13,16 +13,26 @@ const iceCream = [
 ]
 
 function itemOrder(itemName) {
-  console.log($itemName)
+  //Debug Code to verify product buttons return the correct product name
+  //console.log('ordering: ', itemName);
 
-  let itemOrdered = null
+  let customerOrder = null
+  for (let i = 0; i < iceCream.length; i++) {
+    let item = iceCream[i]
+    if (item.name == itemName) {
+
+      //Debug Code to verify comparison between item.name and itemName functions
+      //console.log('found: ', itemName);
+
+      customerOrder = item
+    }
+  }
 }
 
 
 
-//function orderItem(selectedItemName) {
-//  console.log('ordering', selectedItemName);
-//  let itemOrdered = null
+
+
 //  for (let i = 0; i < shopItems.length; i++) {
 //    let item = shopItems[i]
 //    if (item.name == selectedItemName) {
