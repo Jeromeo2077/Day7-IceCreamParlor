@@ -12,3 +12,26 @@ const iceCream = [
   { name: 'Dipped Cone', price: 5.00, quantity: 0, type: 'cone' }
 ]
 
+function itemOrder(itemName) {
+  console.log($itemName)
+
+  let itemOrdered = null
+}
+
+
+
+//function orderItem(selectedItemName) {
+//  console.log('ordering', selectedItemName);
+//  let itemOrdered = null
+//  for (let i = 0; i < shopItems.length; i++) {
+//    let item = shopItems[i]
+//    if (item.name == selectedItemName) {
+//      console.log('found', item);
+//      itemOrdered = item
+//    }
+//  }
+//
+//  itemOrdered.qty += 1
+//  drawOrder()
+//
+//}
