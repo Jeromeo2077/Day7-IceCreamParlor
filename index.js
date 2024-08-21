@@ -33,5 +33,25 @@ function itemOrder(itemName) {
   drawCustomerOrder()
 }
 
+function drawCustomerOrder() {
+  let customerOrderElm = document.getElementById('customerOrder')
+
+  //Debug Code to verify id=customerOrder is passed to customerOrderElm
+  //console.log('printed: ', customerOrderElm);
+
+  let customerOrder = ''
+
+  for (let i = 0; i < array.length; i++) {
+    iceCream = array[i];
+
+    let item = iceCream[i]
+
+    //Debug Code to verify id=customerOrder is passed to customerOrderElm
+    console.log(`${item.quantity}x ${item.name} $${(item.quantity * item.price)})
+  
+
+  }
+}
+
 
 
