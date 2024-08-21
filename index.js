@@ -34,24 +34,26 @@ function itemOrder(itemName) {
 }
 
 function drawCustomerOrder() {
-  let customerOrderElm = document.getElementById('customerOrder')
-
-  //Debug Code to verify id=customerOrder is passed to customerOrderElm
-  //console.log('printed: ', customerOrderElm);
-
   let customerOrder = ''
 
-  for (let i = 0; i < array.length; i++) {
-    iceCream = array[i];
+  for (let i = 0; iceCream.length; i++) {
+
+    customerOrder = iceCream[i]
 
     let item = iceCream[i]
 
-    //Debug Code to verify id=customerOrder is passed to customerOrderElm
-    console.log(`${item.quantity}x ${item.name} $${(item.quantity * item.price)})
-  
+    //Debug Code to verify the correct item and quantity is being passed through via OnClick
+    //console.log(`${item.quantity} x ${item.name} $${(item.quantity * item.price)}`)
 
+    let customerOrderElm = document.getElementById('customerOrder')
+    customerOrderElm.innerHTML = customerOrder
+
+    //Debug Code to verify the value of customerOrder is correct
+    console.log(customerOrder)
   }
+
 }
+
 
 
 
