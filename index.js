@@ -44,11 +44,11 @@ function drawCustomerOrder() {
     //console.log(`${item.quantity} x ${item.name} $${(item.quantity * item.price)}`)
 
     if (item.quantity > 0) {
-      customerOrder += `<p>${item.quantity}x ${item.name} $${(item.price * item.quantity).toFixed(2)}</p>`
+      customerOrder += `<p> ${item.quantity}x ${item.name} $${(item.price * item.quantity).toFixed(2)} </p>`
     }
 
     let customerOrderElm = document.getElementById('customerOrder')
-    customerOrderElm.innerText = customerOrder
+    customerOrderElm.innerHTML = customerOrder
 
     //Debug Code to verify the value of customerOrder is correct
     //console.log(customerOrder)
