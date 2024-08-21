@@ -36,24 +36,25 @@ function itemOrder(itemName) {
 function drawCustomerOrder() {
   let customerOrder = ''
 
-  for (let i = 0; iceCream.length; i++) {
-
-    customerOrder = iceCream[i]
+  for (let i = 0; i < iceCream.length; i++) {
 
     let item = iceCream[i]
 
     //Debug Code to verify the correct item and quantity is being passed through via OnClick
     //console.log(`${item.quantity} x ${item.name} $${(item.quantity * item.price)}`)
 
+    if (item.quantity > 0) {
+      customerOrder += `<p>${item.quantity}x ${item.name} $${(item.price * item.quantity).toFixed(2)}</p>`
+    }
+
     let customerOrderElm = document.getElementById('customerOrder')
-    customerOrderElm.innerHTML = customerOrder
+    customerOrderElm.innerText = customerOrder
 
     //Debug Code to verify the value of customerOrder is correct
-    console.log(customerOrder)
+    //console.log(customerOrder)
+
   }
 
 }
-
-
 
 
